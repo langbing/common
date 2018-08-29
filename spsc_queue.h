@@ -1,5 +1,6 @@
 #pragma once
 
+namespace common {
 /* single-producer/single-consumer from intel */
 template<typename T>
 void store_release(T *addr, T v) {
@@ -84,3 +85,4 @@ private:
  node *first;
  node *tail_copy;
 };
+} // namespace common
